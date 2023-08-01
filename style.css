@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 436px;
+  width: 100%;
+  background: #535971;
+  position: absolute;
+  z-index: -1;
+}
+
+body {
+  background: #efefef;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Staatliches";
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+h2 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.page {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  margin: 140px auto;
+}
+
+.page h2 {
+  width: 417px;
+  margin-bottom: 44px;
+}
+
+/* aumentei o gap de 32px para 56px,
+para obter maior espaçamento entre os
+fieldsets em função da
+arquitetura da informação */
+form {
+  background-color: #fff;
+  padding: 64px;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+legend {
+  color: #535971;
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  line-height: 34px; /* 141.667% */
+  padding-bottom: 16px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid #e6e6f0;
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-wrapper label {
+  color: #4e4958;
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 24px; /* 171.429% */
+}
+
+.input-wrapper span {
+  color: #c1bccc;
+  font-family: Poppins;
+  font-size: 12px;
+  line-height: 20px; /* 166.667% */
+  margin-left: 4px;
+}
+
+.input-wrapper input {
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  height: 56px;
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+  align-items: end;
+}
+
+.col-2 div {
+  width: 50%;
+}
+
+.col-2-2 {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 0 0 0 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #4e4958;
+}
+
+h3 {
+color: #535971;
+font-family: 'Staatliches', sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 34px; /* 170% */
+}
+
+.button-bg {
+  height: 160px;
+  background-color: #535971;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px;
+}
+
+.button-bg input {
+  height: 56px;
+  border-radius: 20px;
+  background-color: #FF5374;
+  padding: 15px 40px;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+
+/* descomentar abaixo para mostrar com outline
+vermelho os campos que não foram validados */
+/* 
+input:invalid {
+  border: 2px solid red;
+} */
